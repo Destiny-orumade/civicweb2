@@ -7,7 +7,6 @@ import {
 // import AuthModal from "./components/Auth/AuthModal";
 import Signup from "./pages/Signup";
 import Dashboard from "./pages/Dashboard";
-import "./styles/global.css"; // optional global styles
 import HomePage from "./pages/homePage";
 import AuthModal from "./components/Auth/AuthModal";
 
