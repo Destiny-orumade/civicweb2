@@ -1,8 +1,8 @@
-import React from 'react';
-import '../../styles/AuthModal.css';
-import NINInput from './NinInput';
-import PhoneInput from './PhoneInput';
-import SocialButtons from './SocialButtons';
+import React from "react";
+import "../../styles/AuthModal.css";
+import NINInput from "./NinInput";
+import PhoneInput from "./PhoneInput";
+import SocialButtons from "./SocialButtons";
 
 const AuthModal = () => {
   return (
@@ -12,7 +12,8 @@ const AuthModal = () => {
       <NINInput />
       <PhoneInput />
       <p className="auth-info-text">
-        We'll call or text you to confirm your number. Standard message and data rates apply.
+        We'll call or text you to confirm your number. Standard message and data
+        rates apply.
       </p>
       <div className="auth-buttons">
         <button className="primary-button">Continue</button>
