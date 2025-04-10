@@ -1,14 +1,11 @@
-import React from "react";
-import { useState } from "react";
+// import { useState } from "react";
 import "../../styles/AuthModal.css";
 import NINInput from "./NinInput";
 import PhoneInput from "./PhoneInput";
 import SocialButtons from "./SocialButtons";
 
 const AuthModal = () => {
-    const [email, setEmail] = useState<string>("");
-    const [password, setPassword] = useState<string>("");
-    
+
 
   return (
     <div className="auth-modal">

@@ -1,5 +1,3 @@
-import React from 'react';
-
 const NINInput = () => {
   return (
     <div className="mb-4">

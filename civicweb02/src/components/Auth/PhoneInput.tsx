@@ -1,5 +1,3 @@
-import React from "react";
-
 const PhoneInput = () => {
   return (
     <div className="mb-4 grid grid-cols-3 gap-2">
