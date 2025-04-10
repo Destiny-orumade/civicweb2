@@ -1,1 +1,10 @@
 @import "tailwindcss";
+
+@theme {
+  --font-display: "Open Sans", "sans-serif";
+
+  --color-home: rgba(0, 61, 37, 1);
+  --color-search: rgba(255, 255, 255, 1);
+  --color-normal: rgba(0, 0, 0, 1);
+  --color-tag: rgba(217, 217, 217, 0.5);
+}
