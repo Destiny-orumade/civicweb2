@@ -1,54 +1,13 @@
-import { FaBars, FaSearch } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import LatestUpdates from "../components/latestUpdates";
+import { useNavigate } from "react-router-dom";
 
 function HomePage() {
-  return (
-    <section className="bg-white font-[Open Sans]">
-      <header className="bg-home text-white h-[80px] flex items-center justify-center">
-        <div className="w-[80%] flex justify-between items-center">
-          <h1 className="text-[2rem] font-[700]">
-            <span className="text-green-300">Civic</span>Link
-          </h1>
-          <nav className="lg:flex hidden justify-between gap-[40px] items-center">
-            <ul className="flex gap-[40px] font-[700] ">
-              <li>
-                <Link to="#">Home</Link>
-              </li>
-              <li>
-                <Link to="#">About</Link>
-              </li>
-              <li>
-                <Link to="#">Services</Link>
-              </li>
-              <li>
-                <Link to="#">Officials</Link>
-              </li>
-              <li>
-                <Link to="#">Complaints</Link>
-              </li>
-            </ul>
-            <div className=" w-[220px] flex justify-center border-[1px] border-search rounded-[6px] p-[8px] items-center">
-              <div>
-                <input
-                  className="border-0 outline-0"
-                  placeholder="search in site"
-                  type="text"
-                  name=""
-                />
-              </div>
-              <div className="">
-                <FaSearch />
-              </div>
-            </div>
-          </nav>
-        </div>
-        <div className="lg:hidden text-4xl absolute right-10">
-          <FaBars />
-        </div>
-      </header>
+  const navigate = useNavigate();
 
-      <section className="h-[384px]">
+  return (
+    <div className="bg-white font-[Open Sans]">
+      <section className="pb-20">
         <div className="flex flex-col items-center gap-4 ">
           <h1 className="text-center font-bold pt-20 leading-[100%] text-[2.5rem]">
             Connecting Citizens to <br /> Government Responsibly
@@ -57,18 +16,26 @@ function HomePage() {
             Welcome to CivicLink! Find your representative or engage <br /> with
             government officials.
           </p>
-          <button className="py-[12px] px-[20px] h-[50px] w-[328px] bg-home rounded-[8px] text-white">
+          <button
+            className="py-[12px] px-[20px] h-[50px] w-[328px] bg-home rounded-[8px] text-white"
+            onClick={() => {
+              navigate("/learn-more");
+            }}
+          >
             Learn More
+          </button>
+          <button className="py-[12px] px-[20px] h-[50px] w-[328px] bg-white border border-home rounded-[8px] text-home">
+            Connect with your CivicLink
           </button>
         </div>
       </section>
 
-      <section className="h-[608px] flex items-center justify-center ">
+      <section className="pb-30 flex items-center justify-center">
         <div className="flex w-full flex-col md:flex-row px-4 md:px-0 md:w-[80%] mx-auto gap-x-3 justify-between items-center">
-          <aside className="font-bold text-[2.5rem]">
-            Explore Government <br /> Structure
-          </aside>
-          <aside className="md:w-2/4 w-full mb-10 md:mb-0">
+          <div className="font-bold text-[2.5rem] text-center">
+            Explore Government Structure
+          </div>
+          <div className="md:w-2/4 w-full mb-10 md:mb-0">
             <ul className="flex flex-col gap-[20px]">
               <li className="flex items-center border-b-1 border-b-gray-300 py-4">
                 <p className="flex py-3 px-4 bg-gray-100 rounded-full items-center justify-center">
@@ -101,7 +68,7 @@ function HomePage() {
                 <p className="ml-4">Categories of Services</p>
               </li>
             </ul>
-          </aside>
+          </div>
         </div>
       </section>
 
@@ -172,15 +139,7 @@ function HomePage() {
           </ul>
         </div>
       </section>
-
-      <section className="mt-30 pb-10">
-        <div className="flex flex-col md:flex-row mx-auto w-2/3 items-center justify-between gap-[60px] md:gap-0">
-          <p>© 2025 CivicLink. All rights reserved.</p>
-          <p>Privacy Policy</p>
-          <p>Terms of Service</p>
-        </div>
-      </section>
-    </section>
+    </div>
   );
 }
 

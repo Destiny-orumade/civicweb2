@@ -1,13 +1,9 @@
-const Dashboard = () => {
-  return (
-    <div
-      className="bg-green-700 text-2xl
-   text-white flex flex-col h-screen justify-center items-center"
-    >
-      <p className="text-6xl">Dashboard</p>
-      <p className="animate-ping">Coming soon</p>
-    </div>
-  );
-};
+function Dashboard() {
+    return (
+        <div className="flex-1">
+            <h1>Coming soon</h1>
+        </div>
+    );
+}
 
 export default Dashboard;
