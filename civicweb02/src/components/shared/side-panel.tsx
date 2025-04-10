@@ -3,7 +3,6 @@ import {
   LayoutDashboardIcon,
   NotebookPen,
   PlusIcon,
-  Search,
   SearchIcon,
   UserIcon,
 } from "lucide-react";
