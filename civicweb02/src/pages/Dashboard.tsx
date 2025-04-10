@@ -43,7 +43,7 @@ const Dashboard: React.FC = () => {
         <p className="open-sans text-3xl text-[#484848] font-bold">
           No New Inbox
         </p>
-        <button className="bg-[#D9D9D980] text-[#000000] p-2 rounded border border-[#0000001A] mt-6">
+        <button className="bg-[#D9D9D980] text-[#000000] p-2 rounded border border-[#0000001A] mt-6 cursor-pointer">
           View details
         </button>
       </div>

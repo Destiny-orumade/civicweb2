@@ -18,7 +18,7 @@ const Announcements: React.FC<AnnouncementsProps> = ({
           <p className="bg-[#D9D9D980] border border-[#0000001A] p-1 rounded">
             {number}
           </p>
-          <p className="bg-[#D9D9D980] border border-[#0000001A] p-1 rounded">
+          <p className="bg-[#D9D9D980] border border-[#0000001A] p-1 rounded cursor-pointer">
             View details
           </p>
         </div>
