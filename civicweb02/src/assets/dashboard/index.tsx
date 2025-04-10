@@ -10,6 +10,9 @@ import notification from "./notification.png";
 import avatar from "./Avatar.png";
 import arrow_down from "./arrow-down.png";
 import hamburger from "./burgermenu.png";
+import flag from "./flag.png";
+import resolved_report from "./resolved-reports.png";
+import submitted_reports from "./submitted-reports.png";
 
 // Import all images from the assets folder
 
@@ -27,6 +30,9 @@ const images = {
   avatar,
   arrow_down,
   hamburger,
+  flag,
+  resolved_report,
+  submitted_reports,
 };
 
 export default images;
