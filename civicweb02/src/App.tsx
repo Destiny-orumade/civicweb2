@@ -16,10 +16,10 @@ const App = () => {
     createRoutesFromElements(
       // Every route goes here
       <>
-        <Route path="/" element={<Signup />} />
+        <Route path="/signup" element={<Signup />} />
         <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/" element={<AuthModal />} />
-        <Route path="/home" element={<HomePage />} />
+        <Route path="/dsad" element={<AuthModal />} />
+        <Route path="/" element={<HomePage />} />
       </>
     )
   );
