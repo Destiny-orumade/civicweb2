@@ -1,6 +1,7 @@
 import Logo from "../../assets/logo.png";
 import images from "../../assets/dashboard";
 import { Link } from "react-router-dom";
+import "../../styles/Dashboard.css";
 
 interface SidebarProps {
   isOpen: boolean;
@@ -24,7 +25,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, setIsOpen }) => {
               className="w-12 h-12"
               alt="account icon"
             />
-            <p>Account</p>
+            <p className="text-white reg-text">Account</p>
           </Link>
           <Link
             to=""
@@ -35,42 +36,42 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, setIsOpen }) => {
               className="w-12 h-12"
               alt="dashboard icon"
             />
-            <p>Dashboard</p>
+            <p className="text-white reg-text">Dashboard</p>
           </Link>
           <Link
             to=""
             className="flex flex-col gap-2 items-center justify-center"
           >
             <img src={images.officials} alt="officials icon" />
-            <p>Officials</p>
+            <p className="text-white reg-text">Officials</p>
           </Link>
           <Link
             to=""
             className="flex flex-col gap-2 items-center justify-center"
           >
             <img src={images.report} alt="report icon" />
-            <p>New Report</p>
+            <p className="text-white reg-text">New Report</p>
           </Link>
           <Link
             to=""
             className="flex flex-col gap-2 items-center justify-center"
           >
             <img src={images.find} alt="find icon" />
-            <p>Find</p>
+            <p className="text-white reg-text">Find</p>
           </Link>
           <Link
             to=""
             className="flex flex-col gap-2 items-center justify-center"
           >
             <img src={images.volunteer} alt="volunteer icon" />
-            <p>Volunteer</p>
+            <p className="text-white reg-text">Volunteer</p>
           </Link>
           <Link
             to=""
             className="flex flex-col gap-2 items-center justify-center"
           >
             <img src={images.help} alt="help icon" />
-            <p>Help Center</p>
+            <p className="text-white reg-text">Help Center</p>
           </Link>
         </div>
       </div>
