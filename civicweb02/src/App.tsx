@@ -17,10 +17,12 @@ const App = () => {
     createRoutesFromElements(
       // Every route goes here
       <>
-        <Route path="/signup" element={<Signup />} />
+        <Route path="/signupsignup" element={<Signup />} />
         <Route path="/home" element={<HomePage />} />
         <Route path="/dashboard" element={<DashboardLayout />}>
           <Route index element={<Dashboard />} />
+          <Route path="/dsad" element={<AuthModal />} />
+          <Route path="/" element={<HomePage />} />
           {/* <Route path="home" element={<Dashboard />} />
           <Route path="settings" element={<Dashboard />} /> */}
           {/* Add more nested routes here */}
