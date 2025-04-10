@@ -1,5 +1,5 @@
-import React from 'react';
-import '../../styles/SocialButtons.css';
+import React from "react";
+import "../../styles/SocialButtons.css";
 
 const SocialButtons = () => {
   return (
