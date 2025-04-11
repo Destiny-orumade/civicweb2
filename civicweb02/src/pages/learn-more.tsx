@@ -10,12 +10,6 @@ const armColors: { [key: string]: string } = {
   judicial: "text-purple-500", // Slightly lighter purple
 };
 
-const levelColors: { [key: string]: string } = {
-  federal: "text-red-500",
-  state: "text-yellow-600",
-  local: "text-indigo-500",
-};
-
 const LearnMore = () => {
   return (
     <div className="py-16 px-8 md:px-16 lg:px-24">

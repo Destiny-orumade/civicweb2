@@ -1,7 +1,7 @@
-import { FaBars, FaSearch } from "react-icons/fa";
+import { FaSearch } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { Input } from "../ui/input";
-import { MenuIcon, Search, SearchIcon } from "lucide-react";
+import { MenuIcon, SearchIcon } from "lucide-react";
 
 function Header() {
   return (
