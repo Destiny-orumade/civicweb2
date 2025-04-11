@@ -1,8 +1,8 @@
-import { federal, state, local } from "@/components/learn-more/data";
-import { Input } from "@/components/ui/input";
+import { federal, state, local } from "../components/learn-more/data";
+import { Input } from "../components/ui/input";
 import { SearchIcon } from "lucide-react";
 import { Link } from "react-router-dom";
-import GovernmentOfficialCard from "@/components/learn-more/government-official-card";
+import GovernmentOfficialCard from "../components/learn-more/government-official-card";
 
 const armColors: { [key: string]: string } = {
   executive: "text-blue-500", // Slightly lighter blue

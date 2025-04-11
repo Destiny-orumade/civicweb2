@@ -1,5 +1,5 @@
-import SigninForm from "@/components/auth/signin-form";
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import SigninForm from "../components/auth/signin-form";
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "../components/ui/card";
 import { XIcon } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
 

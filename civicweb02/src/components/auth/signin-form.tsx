@@ -4,7 +4,7 @@ import {
   FormField,
   FormItem,
   FormMessage,
-} from "@/components/ui/form";
+} from "../ui/form";
 
 import { z } from "zod";
 import { useForm } from "react-hook-form";
